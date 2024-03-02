@@ -17,3 +17,9 @@ Web 개발 기술 참고 페이지
  * https://dev.gmarket.com/95
  * https://helloinyong.tistory.com/297
 
+
+# 로컬 실행방법 (for developer)
+ * jekyll 을 설치합니다.
+ * jekyll serve
+ * 이제 127.0.0.1:4000 에서 intex.html 이 반영되어있다.
+ * 127.0.0.1:4000/public/index.html 에서는, 자체 테스트중인 샘플페이지가 열린다.

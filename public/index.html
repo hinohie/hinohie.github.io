@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8"/>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
     <title>홍은기 ❤️ 이정민 결혼식에 초대합니다</title>
     <link href="./styles/main.css" rel="stylesheet"/>
     <link rel="icon" href="../resources/image/favicon.ico">
-    <script src="scripts/main.js"></script>
+    <script src="./scripts/main.js"></script>
+
+    <!-- https://swiperjs.com/demos#effect-coverflow -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </head>
 <body>
     <div>
@@ -17,5 +20,55 @@
         <img src="../resources/image/dummy.png" loading="lazy" alt="dummy" width="200" height="200" onload="photoLoaded();"/> <br/>
         <img src="../resources/image/dummy.png" loading="lazy" alt="dummy" width="200" height="200" onload="photoLoaded();"/> <br/>
     </div>
+    <div id="galleryContainer">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://drive.google.com/thumbnail?sz=w300&id=13G4l_TenpJI6OLcJjtkzx-dsabcALQFh" alt="gallery-image-1" loading="lazy" width="300" onload="photoLoaded();"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://drive.google.com/thumbnail?sz=w300&id=14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU" alt="gallery-image-2" loading="lazy" width="300" onload="photoLoaded();"/>
+            </div>
+            <div class="swiper-slide">
+                <img src="https://drive.google.com/thumbnail?sz=w300&id=1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz" alt="gallery-image-3" loading="lazy" width="300" onload="photoLoaded();"/>
+            </div>
+            <div class="swiper-slide">
+                <div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;">
+                    <button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">
+                        더 보기<br/>(예상 데이터 사용량 : 약 120MB)
+                    </button>
+                </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
