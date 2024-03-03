@@ -6,5 +6,5 @@ function photoLoaded()
 function GalleryMoreClicked()
 {
     console.log("GalleryMoreClicked\n");
-    window.open("./gallery_more.html");
+    window.open("./public/gallery_more.html");
 }
