@@ -205,28 +205,28 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=13G4l_TenpJI6OLcJjtkzx-dsabcALQFh" alt="gallery-image-1" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=13G4l_TenpJI6OLcJjtkzx-dsabcALQFh" alt="gallery-image-1" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU" alt="gallery-image-2" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU" alt="gallery-image-2" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4" alt="gallery-image-3" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4" alt="gallery-image-3" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz" alt="gallery-image-4" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz" alt="gallery-image-4" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U" alt="gallery-image-5" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U" alt="gallery-image-5" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL" alt="gallery-image-6" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL" alt="gallery-image-6" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO" alt="gallery-image-7" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO" alt="gallery-image-7" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
-                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0" alt="gallery-image-8" loading="lazy" width="300" onload="photoLoaded();"/>
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0" alt="gallery-image-8" loading="lazy" width="300" onload="photoLoaded();" onclick="ModalOpen(this);"/>
               </div>
               <div class="swiper-slide">
                   <div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;">
@@ -432,6 +432,30 @@
           prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+
+  <!-- The Modal -->
+  <!-- Code base : https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+  <div id="myModal" class="modal">
+    <span class="closeModal">&times;</span>
+    <img class="modal-content" id="modalImage"/>
+  </div>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  var modalImage  = document.getElementById("modalImage");
+
+  // Get the <span> element that closes the modal
+  var closeButton = document.getElementsByClassName("closeModal")[0];
+
+  // When the user clicks image, or close button, close the modal
+  modalImage.onclick = function() { 
+    modal.style.display = "none";
+  }
+  closeButton.onclick = function() { 
+    modal.style.display = "none";
+  }
   </script>
 </div>
 
