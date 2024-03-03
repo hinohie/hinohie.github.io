@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" name="viewport">
+
+<title>홍은기 ❤️ 이정민 결혼식에 초대합니다</title>
+<link href="./public/styles/main.css" rel="stylesheet"/>
+<link rel="icon" href="./resources/image/favicon.ico">
+<script src="./public/scripts/main.js"></script>
+
+<!-- https://swiperjs.com/demos#effect-coverflow -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
 <body>
 
-<head>
-<meta charset="utf-8">
-<title>HappyHappyWeddingCard</title>
-</head>
-
 <div class="FullPage" style="width: 360px; height: 4520px; background: white; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: inline-flex">
+
+  <!-- Page 1 : Main image -->
 	<div class="Page1" style="width: 360px; height: 720px; position: relative; background: #FBFBFB; overflow:hidden">
   <img class="Coverimage" style="width: 371px; left: 0px; top: 0px; position: absolute" src="resources/image/Cover_0.jpg" />
   <div class="WhiteGradient" style="width: 500px; height: 300px; left:-100px;top: 400px; position: absolute; background: linear-gradient(#D9D9D9 0%, white 100%); filter: blur(20px)"></div>
@@ -18,7 +28,7 @@
   </div>
 </div>
 
-
+  <!-- Page 2 : Welcome text -->
   <div class="Page2" style="width: 360px; height: 720px; position: relative; background: #FBFBFB; overflow:hidden">
     <div class="13" style="width: 123px; height: 25px; left: 121px; top: 28px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Italianno; font-weight: 400; word-wrap: break-word">7 / 13</div>
     <div class="Line1" style="width: 311px; height: 0px; left: 23px; top: 51px; position: absolute; border: 1px black solid"></div>
@@ -32,6 +42,7 @@
   </div>
 
 
+  <!-- Page 3 : Dooms day -->
   <div class="Page3" style="width: 360px; height: 600px; position: relative; overflow:hidden">
     <img class="APatternOfBigWhiteFlowersForWedding" style="width: 360; height: 600px; left: 0px; top: 0px; position: absolute" src="resources/image/chris-lee-unsplash.jpg" />
     <div class="13" style="width: 123px; height: 25px; left: 122px; top: 21px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Italianno; font-weight: 400; word-wrap: break-word">7 / 13</div>
@@ -183,21 +194,57 @@
     <div class="07" style="width: 94px; height: 23px; left: 134px; top: 236px; position: absolute; text-align: center; color: black; font-size: 17px; font-family: ChosunilboNM; font-weight: 400; word-wrap: break-word">2024. 07</div>
     <div style="width: 77px; height: 38px; left: 141px; top: 111px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: ChosunilboNM; font-weight: 400; word-wrap: break-word">날짜</div>
   </div>
+
+  <!-- Page 4 : Gallery -->
   <div class="Page4" style="width: 360px; height: 720px; position: relative; background: #FBFBFB; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); overflow:hidden">
     <div class="13" style="width: 123px; height: 25px; left: 122px; top: 27px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Italianno; font-weight: 400; word-wrap: break-word">7 / 13</div>
     <div class="Line4" style="width: 311px; height: 0px; left: 24px; top: 50px; position: absolute; border: 1px black solid"></div>
     <div style="left: 152px; top: 153px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: ChosunilboNM; font-weight: 400; word-wrap: break-word">갤러리</div>
     <div class="Content" style="width: 306px; height: 463px; left: 27px; top: 208px; position: absolute; background: #FBFBFB">
-      <div class="HttpsDevGmarketCom95" style="width: 290px; height: 158px; left: 31px; top: 130px; position: absolute; text-align: center; color: black; font-size: 20px; font-family: ChosunilboNM; font-weight: 400; word-wrap: break-word">https://dev.gmarket.com/95<br/></div>
-      <div class="Scrollablebase" style="width: 976px; height: 465px; left: -2px; top: -2px; position: absolute; background: linear-gradient(90deg, #FC4848 0%, white 100%)"></div>
-      <div class="Arrowright" style="width: 40px; height: 40px; padding-top: 11px; padding-bottom: 11px; left: 263px; top: 205px; position: absolute; border-radius: 40px; overflow: hidden; border: 2px #0B0B0F solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div class="Arrow1" style="width: 27px; height: 0px; transform: rotate(180deg); transform-origin: 0 0; background: #D9D9D9; border: 2px #0B0B0F solid"></div>
-      </div>
-      <div class="Arrowleft" style="width: 40px; height: 40px; padding-top: 11px; padding-bottom: 11px; left: 2px; top: 204px; position: absolute; border-radius: 40px; overflow: hidden; border: 2px #0B0B0F solid; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
-        <div class="Arrow1" style="width: 27px; height: 0px; transform: rotate(180deg); transform-origin: 0 0; background: #D9D9D9; border: 2px #0B0B0F solid"></div>
+      <div id="galleryContainer">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=13G4l_TenpJI6OLcJjtkzx-dsabcALQFh" alt="gallery-image-1" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU" alt="gallery-image-2" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4" alt="gallery-image-3" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz" alt="gallery-image-4" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U" alt="gallery-image-5" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL" alt="gallery-image-6" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO" alt="gallery-image-7" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <img src="https://drive.google.com/thumbnail?sz=w300&id=1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0" alt="gallery-image-8" loading="lazy" width="300" onload="photoLoaded();"/>
+              </div>
+              <div class="swiper-slide">
+                  <div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;">
+                      <button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">
+                          더 보기<br/>(예상 데이터 사용량 : 약 120MB)
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
       </div>
     </div>
   </div>
+
+  <!-- Page 5 : How to come -->
   <div class="Page5" style="width: 360px; height: 1040px; position: relative; background: #FBFBFB; overflow:hidden">
     <div class="13" style="width: 123px; height: 25px; left: 123px; top: 26px; position: absolute; text-align: center; color: black; font-size: 12px; font-family: Italianno; font-weight: 400; word-wrap: break-word">7 / 13</div>
     <div class="Line1" style="width: 311px; height: 0px; left: 25px; top: 49px; position: absolute; border: 1px black solid"></div>
@@ -249,6 +296,8 @@
       </div>
     </div>
   </div>
+
+  <!-- Page 6 : Thanks to -->
   <div class="Page6" style="width: 360px; height: 720px; position: relative; background: #FBFBFB;overflow:hidden">
     <div class="13" style="width: 123px; height: 25px; left: 123px; top: 23px; position: relative; text-align: center; color: black; font-size: 12px; font-family: Italianno; font-weight: 400; word-wrap: break-word">7 / 13</div>
     <div class="Line2" style="width: 311px; height: 0px; left: 25px; top: 46px; position: absolute; border: 1px black solid"></div>
@@ -358,7 +407,32 @@
       </div>
     </div>
   </div>
+
+  
+  <!-- Initialize Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </div>
 
-</body>
 </html>
