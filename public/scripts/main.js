@@ -1,10 +1,23 @@
 function photoLoaded()
 {
-    console.log("Image loaded!!!\n");
+    //console.log("Image loaded!!!\n");
 }
 
 function GalleryMoreClicked()
 {
-    console.log("GalleryMoreClicked\n");
+    //console.log("GalleryMoreClicked\n");
     window.open("./public/gallery_more.html");
 }
+
+function ModalOpen(image){
+    modal.style.display = "block";
+
+    var modalImg = document.getElementById("modalImage");
+    var inputSrc = image.src;
+
+    var outputSrc = inputSrc.replace("sz=w300&", "sz=w700&");
+
+    console.log("Modal load image!" + outputSrc);
+
+    modalImg.src = outputSrc;
+  }
