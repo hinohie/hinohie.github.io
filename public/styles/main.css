@@ -18,6 +18,47 @@ h1 {
     margin-left: 20px;
 }
 
+/* Custom class for local */
+
+/* Global item constraints */
+.page {
+  background-color: #F9F9F9;
+  max-width: 1024px;
+  margin: auto;
+}
+
+/* Page 1 */
+.Coverimage {
+  background: linear-gradient(#D9D9D900 0%, #D9D9D900 50%, #D9D9D9FF 70%, white 100%), url("../../resources/image/Cover_0.jpg") no-repeat center center;
+  background-size: cover;
+  background-position: 50% 20%;
+  height: 100vh;
+  min-height: 480px;
+  margin:auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.Frame9{
+  display: flex;
+  height: 100%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.Frame9 div{
+  text-align: center;
+  color: black; 
+  font-family: "Noto Serif KR";
+  font-weight: 400;
+  line-height: 22.50px;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
 /* Swipper */
 .swiper {
     width: 100%;
