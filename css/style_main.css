@@ -104,9 +104,9 @@
 }
 
 .page > p {
-	position: relative; 
-	text-align: center; 
-	color: black; 
+	position: relative;
+	text-align: center;
+	color: black;
 	font-size: 15px;
 	font-family: Noto Serif KR;
 	font-weight: 400;
@@ -130,7 +130,7 @@ span {
 		align-self: stretch;
 		padding: 10px;
 		flex-direction: column;
-		justify-content: flex-start; 
+		justify-content: flex-start;
 		align-items: flex-start;
 		gap: 10px;
 		display: flex;
@@ -148,34 +148,77 @@ span {
 
 
 .page > .introducePerson {
-	position: relative; 
-	padding-top: 6px; 
-	padding-bottom: 4px; 
-	padding-left: 1px; 
-	padding-right: 1px; 
-	flex-direction: column; 
+	position: relative;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	padding-left: 1px;
+	padding-right: 1px;
+	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
 	gap: 16px;
 	display: inline-flex;
 }
 
-.page > .calendar {
-	.AtomsWeekDey {
+.calendar {
+  .Grid {
+    align-self: stretch;
+    flex: 1 1 0;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  .Line {
+    align-self: stretch;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+  }
+
+	.WeekDay {
 		.Text {
-			text-align: center; 
-			color: #0F0F3F; 
-			font-size: 11px; 
+			text-align: center;
+			color: #0F0F3F;
+			font-size: 11px;
 			font-family: Noto Serif KR;
-			font-weight: 400; 
+			font-weight: 400;
 			word-wrap: break-word;
 		}
 
-		width: 24px; 
-		height: 24px; 
-		border-radius: 4px; 
-		justify-content: center; 
-		align-items: center; 
+    .HiddenNumber {
+      text-align: center;
+      color: rgba(96.90, 96.90, 96.90, 0.25);
+      font-size: 11px;
+      font-family: Noto Serif KR;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+    .Number {
+      text-align: center;
+      color: #616161;
+      font-size: 11px;
+      font-family: Noto Serif KR;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+
+		width: 24px;
+		height: 24px;
+		border-radius: 4px;
+		justify-content: center;
+		align-items: center;
 		display: flex;
 	}
+
+  width: 80%;
+  height: 80%;
+  left: 71px;
+  top: 269px;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  display: inline-flex;
 }
