@@ -30,7 +30,7 @@ function generateAccountInfoBoard() {
         <div class="Line">' +
           `<div class="Text">${name1[i]}</div>` +
           `<div class="Text">${name2[i]}</div></div>` +
-          '<div class="Button" style="margin-left: 30px">\
+          '<div class="Button" style="margin-left: 20px">\
             <div class="Text">계좌</div>\
           </div>\
           <div class="Button">\
