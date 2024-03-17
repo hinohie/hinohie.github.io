@@ -244,3 +244,69 @@ span {
   align-items: center;
   display: flex;
 }
+
+.Account {
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  display: inline-flex;
+  gap: 20px;
+  margin: 15px;
+}
+.Account > .Line {
+  min-width: 100px;
+  flex-direction: row;
+  justify-content: flex-end;
+  display: inline-flex;
+  gap: 20px;
+
+  .Text {
+    white-space: nowrap;
+    text-align: center;
+    color: black;
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    line-height: 30px;
+    word-wrap: break-word;
+  }
+}
+
+.Button {
+  .Text {
+    color: #0F0F02;
+    font-size: 13px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    line-height: 26px;
+
+    white-space: nowrap;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  width: fit-content;
+  position: relative;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  background: #ECEEF2;
+  border-radius: 17px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+.Button:hover {
+  background: #A1A1A1;
+
+  .Text {
+    color: #FDFDFD;
+  }
+}
+.Button:active {
+  background: #101D41;
+  .Text {
+    color: #FCFCFC;
+  }
+}
