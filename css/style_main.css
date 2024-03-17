@@ -228,10 +228,10 @@ span {
   .HighlightNumber {
     position: relative;
     background: #0F0F3F;
-    border-radius: 9999px;
+    border-radius: 50%;
     text-align: center;
-    width: 35px;
-    height: 35px;
+    white-space: nowrap;
+    padding: 0.5vh 1vh;
 
     color: white;
     font-size: 15px;
