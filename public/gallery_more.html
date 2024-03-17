@@ -8,8 +8,22 @@
     <link href="./styles/main.css" rel="stylesheet"/>
     <link rel="icon" href="../resources/image/favicon.ico">
     <script src="scripts/main.js"></script>
+</head>
 <body>
     <div>
-        <h1>WAHAHA - More images!</h1>
+        <h1>More images!</h1>
     </div>
+    <div>
+        <div class="MoreImages"></div>
+    </div>
+
+    <script src="scripts/more-images-generator.js" defer></script>
+
+    <!-- The Modal -->
+    <!-- Code base : https://www.w3schools.com/howto/howto_css_modal_images.asp -->
+    <div id="myModal" class="modal">
+        <span class="closeModal">&times;</span>
+        <img class="modal-content" id="modalImage"/>
+    </div>
+</body>
 </html>
