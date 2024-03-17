@@ -10,7 +10,7 @@ const WeekDay = {
 };
 Object.freeze(WeekDay);
 
-function generateCalendar(day, startWeekDay) {
+function generateCalendar(highlightDay, startWeekDay) {
   const $target = document.getElementsByClassName("calendar")[0];
 
   let text = "";
@@ -41,6 +41,14 @@ function generateCalendar(day, startWeekDay) {
       else if(n > MAX_DAY_COUNT)
       {
         text += `<div class=WeekDay><div class=HiddenNumber>${n % MAX_DAY_COUNT}</div></div>`;
+      }
+      else if(n == highlightDay)
+      {
+        text += `<div class=WeekDay><div class=HighlightNumber>${n}</div></div>`;
+      }
+      else if(day == WeekDay.SUN)
+      {
+        text += `<div class=WeekDay><div class=RedNumber>${n}</div></div>`;
       }
       else
       {

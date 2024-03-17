@@ -22,7 +22,7 @@
 	position: relative;
 	text-align: center;
 	color: black;
-	font-size: 12px;
+	font-size: 25px;
 	font-family: Italianno;
 	font-weight: 400;
 	word-wrap: break-word;
@@ -57,18 +57,30 @@
 .page {
 	width: 100%;
 	height: 100%;
-	min-height: 600px;
+	min-height: 800px;
 	background: #FBFBFB;
 	overflow: hidden;
+}
+
+.content-box{
+  align-items: center;
+  display: flex;
+	justify-content: center;
+  flex-direction: column;
 }
 
 .rect {
 	width: 80%;
 	min-height: 400px;
-	margin: 0 auto;
+	margin: auto;
 	position: relative;
 	background: white;
 	border-radius: 17px;
+
+  align-items: center;
+  display: flex;
+	justify-content: center;
+  flex-direction: column;
 }
 
 .icon-button {
@@ -135,7 +147,6 @@ span {
 		gap: 10px;
 		display: flex;
 	}
-
 	padding-left: 10px;
 	padding-right: 10px;
 	position: relative;
@@ -149,10 +160,6 @@ span {
 
 .page > .introducePerson {
 	position: relative;
-	padding-top: 6px;
-	padding-bottom: 4px;
-	padding-left: 1px;
-	padding-right: 1px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-end;
@@ -175,50 +182,63 @@ span {
     align-items: center;
     display: inline-flex;
   }
-
-	.WeekDay {
-		.Text {
-			text-align: center;
-			color: #0F0F3F;
-			font-size: 11px;
-			font-family: Noto Serif KR;
-			font-weight: 400;
-			word-wrap: break-word;
-		}
-
-    .HiddenNumber {
-      text-align: center;
-      color: rgba(96.90, 96.90, 96.90, 0.25);
-      font-size: 11px;
-      font-family: Noto Serif KR;
-      font-weight: 400;
-      word-wrap: break-word;
-    }
-
-    .Number {
-      text-align: center;
-      color: #616161;
-      font-size: 11px;
-      font-family: Noto Serif KR;
-      font-weight: 400;
-      word-wrap: break-word;
-    }
-
-		width: 24px;
-		height: 24px;
-		border-radius: 4px;
-		justify-content: center;
-		align-items: center;
-		display: flex;
-	}
-
   width: 80%;
-  height: 80%;
-  left: 71px;
-  top: 269px;
-  position: relative;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  height: 250px;
   display: inline-flex;
+}
+
+.WeekDay {
+  .Text {
+    text-align: center;
+    color: #0F0F3F;
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .HighlightNumber {
+    position: relative;
+    background: #0F0F3F;
+    border-radius: 9999px;
+    text-align: center;
+    padding: 10px;
+
+    color: white;
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .HiddenNumber {
+    text-align: center;
+    color: rgba(96.90, 96.90, 96.90, 0.25);
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .RedNumber {
+    text-align: center;
+    color: #AB5959;
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  .Number {
+    text-align: center;
+    color: #616161;
+    font-size: 15px;
+    font-family: Noto Serif KR;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  width: 10%;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
