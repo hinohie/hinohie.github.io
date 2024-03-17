@@ -36,6 +36,24 @@ h1 {
 
 /* Page 1 */
 .Coverimage {
+  .Frame9 {
+    div {
+      text-align: center;
+      color: black; 
+      font-family: "Noto Serif KR";
+      font-weight: 400;
+      line-height: 22.50px;
+      word-wrap: break-word;
+      display: inline-block;
+    }
+    display: flex;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+  }
   background: linear-gradient(#D9D9D900 0%, #D9D9D900 50%, #D9D9D9FF 70%, #FBFBFBFF 100%), url("../../resources/image/Cover_0.jpg") no-repeat center center;
   background-size: cover;
   background-position: 50% 20%;
@@ -44,26 +62,6 @@ h1 {
   margin:auto;
   overflow-x: hidden;
   overflow-y: hidden;
-}
-
-.Frame9{
-  display: flex;
-  height: 100%;
-  margin: auto;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 15px;
-}
-
-.Frame9 div{
-  text-align: center;
-  color: black; 
-  font-family: "Noto Serif KR";
-  font-weight: 400;
-  line-height: 22.50px;
-  word-wrap: break-word;
-  display: inline-block;
 }
 
 /* Swipper */
