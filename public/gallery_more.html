@@ -17,7 +17,7 @@
         <div class="MoreImages"></div>
     </div>
 
-    <script src="scripts/more-images-generator.js" defer></script>
+    <script src="./scripts/more-images-generator.js" defer></script>
 
     <!-- The Modal -->
     <!-- Code base : https://www.w3schools.com/howto/howto_css_modal_images.asp -->
@@ -25,5 +25,22 @@
         <span class="closeModal">&times;</span>
         <img class="modal-content" id="modalImage"/>
     </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        var modalImage = document.getElementById("modalImage");
+
+        // Get the <span> element that closes the modal
+        var closeButton = document.getElementsByClassName("closeModal")[0];
+
+        // When the user clicks image, or close button, close the modal
+        modalImage.onclick = function () {
+          modal.style.display = "none";
+        }
+        closeButton.onclick = function () {
+          modal.style.display = "none";
+        }
+      </script>
 </body>
 </html>
