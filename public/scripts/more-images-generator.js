@@ -1,4 +1,15 @@
 const IdLists = [
+    "13G4l_TenpJI6OLcJjtkzx-dsabcALQFh",
+    "14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU",
+    "1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4",
+    "1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz",
+    "1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U",
+    "1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL",
+    "1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO",
+    "1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0",
+];
+
+const MoreIdLists = [
   "1-5vzvZn7HwW2ABb_heidxuTVIn15LSgi",
   "1-hIm0CiLifnhgdMny9EL3REAF3Mm5x5E",
   "1-jZd-vaKesEKE2F0PE20RVzIC5KuqsLM",
@@ -78,17 +89,51 @@ const IdLists = [
 ];
 
 function generateMoreImages() {
-  const $target = document.getElementsByClassName("MoreImages")[0];
+  const $targets = document.getElementsByClassName("MoreImages");
+  if(typeof $targets == "undefined" || $targets.length == 0)
+  {
+    return;
+  }
+
+  const $target = $targets[0];
 
   let text = "";
   text += `<div class="moreImageContainer">`;
-  for(let i = 0; i < IdLists.length; ++i)
+  for(let i = 0; i < MoreIdLists.length; ++i)
   {
-    text += `<img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-more-${i+1}" loading="lazy" width="300"  onclick="ModalOpen(this);"/>`;
+    text += `<img src="https://drive.google.com/thumbnail?sz=w300&id=${MoreIdLists[i]}" alt="gallery-image-more-${i+1}" loading="lazy" width="300" onerror="this.src='../resources/image/favicon.ico';" onclick="ModalOpen(this);"/>`;
   }
   text += "</div>";
-  console.log(text);
+  // console.log(text);
   $target.innerHTML = text;
 }
 
 generateMoreImages();
+
+function generateGallerySwiperImages() {
+  const $targets = document.getElementsByClassName("mySwiper");
+  if(typeof $targets == "undefined" || $targets.length == 0)
+  {
+    return;
+  }
+
+  const $target = $targets[0];
+
+  let text = "";
+  text += `<div class="swiper-wrapper">`;
+  for(let i = 0; i < IdLists.length; ++i)
+  {
+    text += `<div class="swiper-slide"><img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-${i+1}" loading="lazy" width="300" onerror="this.src='resources/image/favicon.ico';" onclick="ModalOpen(this);"/></div>`;
+  }
+  text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : 약 120MB)</button></div></div>`;
+  text += "</div>";
+  
+  text += `<div class="swiper-button-next"></div>`;
+  text += `<div class="swiper-button-prev"></div>`;
+  text += `<div class="swiper-pagination"></div>`;
+  
+  // console.log(text);
+  $target.innerHTML = text;
+}
+
+generateGallerySwiperImages();
