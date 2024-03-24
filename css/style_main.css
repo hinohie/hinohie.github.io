@@ -300,7 +300,7 @@ span {
   }
 }
 
-.Button {
+button.Button {
   .Text {
     color: #0F0F02;
     font-size: 13px;
@@ -318,6 +318,7 @@ span {
 
   background: #ECEEF2;
   border-radius: 17px;
+  border-width: 0px;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
