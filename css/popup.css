@@ -1,89 +1,101 @@
-.Pop-up {
-  .Title {
-    width: 206px;
-    height: 34px;
-    text-align: center;
-    color: black;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  width: 274px;
-  height: 134px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: white;
-  border-radius: 17px;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  display: inline-flex;
-}
 
 
-.Content {
-  .Name {
-    text-align: center;
-    color: black;
-    font-size: 13px;
-    font-family:  Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
+.Pop-up-wrapper {
+    z-index: 10;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #0000007F;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  .Pop-up {
+    .Title {
+      text-align: center;
+      color: black;
+      font-size: 15px;
+      font-family: Noto Serif KR;
+      font-weight: 400;
+      word-wrap: break-word;
+    }
+    .Content {
+      .Name {
+        text-align: center;
+        color: black;
+        font-size: 17px;
+        font-family:  Noto Serif KR;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+
+      .AccountNumber {
+        text-align: center;
+        color: black;
+        font-size: 17px;
+        font-family: Noto Serif KR;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+
+      width: 280px;
+      padding-left: 33px;
+      padding-right: 33px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background: white;
+      justify-content:space-between;
+      align-items: center;
+      gap:20px;
+      display: inline-flex;
+    }
+
+    .ConfirmButton {
+
+      align-self: stretch;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      display: inline-flex;
+
+      .Left {
+        width: 45%;
+        border-radius: 17px;
+        position: relative;
+        background: #0F0F3F;
+        border-width: 0px;
+        text-align: center;
+      }
+      .Right {
+        width: 45%;
+        border-radius: 17px;
+        position: relative;
+        background: #ECEEF2;
+        border-width: 0px;
+        text-align: center;
+      }
+      .Text {
+        padding: 10px 30px 10px 30px;
+        color: white;
+        font-size: 13px;
+        font-family: Noto Serif KR;
+        font-weight: 400;
+        word-wrap: break-word;
+      }
+    }
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: white;
+    border-radius: 17px;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: flex;
   }
 
-  .AccountNumber {
-    width: 150px;
-    height: 18px;
-    text-align: center;
-    color: black;
-    font-size: 13px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-
-  width: 263px;
-  padding-left: 33px;
-  padding-right: 33px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background: white;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-  display: inline-flex;
-}
-
-
-.ConfirmButton {
-  .Left {
-    width: 137px;
-    height: 46px;
-    position: relative;
-    background: #0F0F3F;
-  }
-  .Right {
-    width: 137px;
-    height: 46px;
-    position: relative;
-    background: #ECEEF2;
-  }
-  .Text {
-    left: 25px;
-    top: 16px;
-    position: absolute;
-    text-align: center;
-    color: white;
-    font-size: 13px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  align-self: stretch;
-  height: 46px;
-  justify-content: center;
-  align-items: flex-start;
-  display: inline-flex;
 }
