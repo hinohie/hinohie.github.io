@@ -46,6 +46,24 @@ h1 {
   overflow-y: hidden;
 }
 
+/* Page 5 */
+.guideToMap {
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  display: inline-flex;
+}
+
+.iconButtonContainer {
+  align-self: stretch;
+  padding: 10px 50px 10px 50px;
+  justify-content: space-between;
+  align-items: flex-start;
+  display: inline-flex;
+}
+
 /* More gallery */
 
 .moreImageContainer {
