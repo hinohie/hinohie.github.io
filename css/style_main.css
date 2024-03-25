@@ -54,12 +54,16 @@
 	display: inline-flex;
 }
 
+/* Global item constraints */
+
 .page {
   width: 100%;
 	height: 100%;
-	min-height: 800px;
+	min-height: 300px;
 	background: #FBFBFB;
 	overflow: hidden;
+  max-width: 1024px;
+  margin: auto;
 
   h1 {
   	position: relative;
@@ -77,9 +81,11 @@
 .content-page {
 	width: 100%;
 	height: 100%;
-	min-height: 800px;
+	min-height: 300px;
 	background: #FBFBFB;
 	overflow: hidden;
+  max-width: 1024px;
+  margin: auto;
 
   align-items: center;
   display: flex;
