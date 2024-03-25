@@ -37,11 +37,11 @@
 }
 
 .header{
-	margin: 10% 0 0 0;
+	margin: 1em 0 0 0;
 }
 
 .footer{
-	margin: 0 0 10% 0;
+	margin: 0 0 1em 0;
 }
 
 .full-page{
@@ -74,7 +74,7 @@
   	font-weight: 400;
   	line-height: 30px;
   	word-wrap: break-word;
-  	margin: 10% 0 10% 0;
+  	margin: 1em 0 1em 0;
   }
 }
 
@@ -102,7 +102,7 @@
   	font-weight: 400;
   	line-height: 30px;
   	word-wrap: break-word;
-  	margin: 0 0 5% 0;
+  	margin: 1em 0 1em 0;
   }
 }
 
