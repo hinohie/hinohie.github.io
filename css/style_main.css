@@ -195,7 +195,7 @@ span {
 }
 
 
-.page > .introducePerson {
+.content-page > .introducePerson {
 	position: relative;
 	flex-direction: column;
 	justify-content: center;
