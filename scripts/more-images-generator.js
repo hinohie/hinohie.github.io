@@ -101,7 +101,7 @@ function generateMoreImages() {
   text += `<div class="moreImageContainer">`;
   for(let i = 0; i < MoreIdLists.length; ++i)
   {
-    text += `<img src="https://drive.google.com/thumbnail?sz=w300&id=${MoreIdLists[i]}" alt="gallery-image-more-${i+1}" loading="lazy" width="300" onerror="this.src='../resources/image/favicon.ico';" onclick="ModalOpen(this);"/>`;
+    text += `<img src="https://drive.google.com/thumbnail?sz=w300&id=${MoreIdLists[i]}" alt="gallery-image-more-${i+1}" loading="lazy" width="300" onerror="this.src='./resources/image/favicon.ico';" onclick="ModalOpen(this);"/>`;
   }
   text += "</div>";
   // console.log(text);
@@ -123,7 +123,7 @@ function generateGallerySwiperImages() {
   text += `<div class="swiper-wrapper">`;
   for(let i = 0; i < IdLists.length; ++i)
   {
-    text += `<div class="swiper-slide"><img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-${i+1}" loading="lazy" width="300" onerror="this.src='resources/image/favicon.ico';" onclick="ModalOpen(this);"/></div>`;
+    text += `<div class="swiper-slide"><img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-${i+1}" loading="lazy" width="300" onerror="this.src='./resources/image/favicon.ico';" onclick="ModalOpen(this);"/></div>`;
   }
   text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : 약 120MB)</button></div></div>`;
   text += "</div>";
