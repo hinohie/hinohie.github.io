@@ -288,7 +288,7 @@ span {
   margin: 15px;
 }
 .Account > .Line {
-  min-width: 100px;
+  min-width: 120px;
   flex-direction: row;
   justify-content: flex-end;
   display: inline-flex;
