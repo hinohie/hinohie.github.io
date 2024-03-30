@@ -1,7 +1,7 @@
 function GalleryMoreClicked()
 {
     //console.log("GalleryMoreClicked\n");
-    window.open("./public/gallery_more.html");
+    window.open("./gallery_more.html");
 }
 
 function ModalOpen(image){
@@ -15,4 +15,4 @@ function ModalOpen(image){
     console.log("Modal load image!" + outputSrc);
 
     modalImg.src = outputSrc;
-  }
+}
