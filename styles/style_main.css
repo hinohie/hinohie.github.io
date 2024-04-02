@@ -288,7 +288,7 @@ span {
 	gap: 10px;
 	margin: 15px;
 	width:100%;
-  max-width: 340px;
+	max-width: 340px;
 }
 .Account > .Line {
 	min-width: 120px;
@@ -313,7 +313,7 @@ span {
 	flex-direction: row;
 	justify-content: flex-start;
 	display: inline-flex;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 10px;
 }
 
