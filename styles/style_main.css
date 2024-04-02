@@ -22,7 +22,7 @@
 	position: relative;
 	text-align: center;
 	color: black;
-	font-size: 25px;
+	font-size: 1.56rem;
 	font-family: Italianno;
 	font-weight: 400;
 	word-wrap: break-word;
@@ -69,10 +69,10 @@
 		position: relative;
 		text-align: center;
 		color: black;
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
-		line-height: 30px;
+		line-height: 1.55rlh;
 		word-wrap: break-word;
 		margin: 1em 0 1em 0;
 	}
@@ -97,10 +97,10 @@
 		position: relative;
 		text-align: center;
 		color: black;
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
-		line-height: 30px;
+		line-height: 1.55rlh;
 		word-wrap: break-word;
 		margin: 1em 0 1em 0;
 	}
@@ -110,10 +110,10 @@
 	position: relative;
 	text-align: center;
 	color: black;
-	font-size: 15px;
+	font-size: 0.94rem;
 	font-family: Noto Serif KR;
 	font-weight: 400;
-	line-height: 30px;
+	line-height: 1.55rlh;
 	word-wrap: break-word;
 }
 
@@ -158,7 +158,7 @@
 }
 
 small {
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-family: Noto Serif KR;
 	font-weight: 400;
 	word-wrap: break-word;
@@ -166,7 +166,7 @@ small {
 span {
 
 	color: black;
-	font-size: 15px;
+	font-size: 0.94rem;
 	font-family: Noto Serif KR;
 	font-weight: 400;
 	word-wrap: break-word;
@@ -175,7 +175,7 @@ span {
 .content-page > .howToCome{
 	p {
 		span {
-			line-height: 1.5em;
+			line-height: 1.25rlh;
 		}
 		align-self: stretch;
 		flex-direction: column;
@@ -221,7 +221,7 @@ span {
 		display: inline-flex;
 	}
 	width: 80%;
-	height: 250px;
+	min-height: 250px;
 	display: inline-flex;
 }
 
@@ -229,7 +229,7 @@ span {
 	.Text {
 		text-align: center;
 		color: #0F0F3F;
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
 		word-wrap: break-word;
@@ -243,7 +243,7 @@ span {
 		padding: 0.5vh 1vh;
 
 		color: white;
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
 		word-wrap: break-word;
@@ -251,7 +251,7 @@ span {
 	.HiddenNumber {
 		text-align: center;
 		color: rgba(96.90, 96.90, 96.90, 0.25);
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
 		word-wrap: break-word;
@@ -259,7 +259,7 @@ span {
 	.RedNumber {
 		text-align: center;
 		color: #AB5959;
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
 		word-wrap: break-word;
@@ -267,7 +267,7 @@ span {
 	.Number {
 		text-align: center;
 		color: #616161;
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
 		word-wrap: break-word;
@@ -301,10 +301,10 @@ span {
 		white-space: nowrap;
 		text-align: center;
 		color: black;
-		font-size: 15px;
+		font-size: 0.94rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
-		line-height: 30px;
+		line-height: 1.55rlh;
 		word-wrap: break-word;
 	}
 }
@@ -320,10 +320,10 @@ span {
 button.Button {
 	.Text {
 		color: #0F0F02;
-		font-size: 13px;
+		font-size: 0.81rem;
 		font-family: Noto Serif KR;
 		font-weight: 400;
-		line-height: 26px;
+		line-height: 1.35rlh;
 
 		white-space: nowrap;
 		margin-left: 15px;

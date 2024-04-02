@@ -17,7 +17,7 @@
 		.Title {
 			text-align: center;
 			color: black;
-			font-size: 15px;
+			font-size: 0.94rem;
 			font-family: Noto Serif KR;
 			font-weight: 400;
 			word-wrap: break-word;
@@ -26,7 +26,7 @@
 			.Name {
 				text-align: center;
 				color: black;
-				font-size: 17px;
+				font-size: 1.06rem;
 				font-family:	Noto Serif KR;
 				font-weight: 400;
 				word-wrap: break-word;
@@ -35,7 +35,7 @@
 			.AccountNumber {
 				text-align: center;
 				color: black;
-				font-size: 17px;
+				font-size: 1.06rem;
 				font-family: Noto Serif KR;
 				font-weight: 400;
 				word-wrap: break-word;
@@ -79,7 +79,7 @@
 			.Text {
 				padding: 10px 30px 10px 30px;
 				color: white;
-				font-size: 13px;
+				font-size: 0.81rem;
 				font-family: Noto Serif KR;
 				font-weight: 400;
 				word-wrap: break-word;
