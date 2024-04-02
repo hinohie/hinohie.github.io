@@ -91,7 +91,6 @@ const MoreIdLists = [
   "1-4Cl4MirWWy8gt34knYVKZthOm2m7Pw4",
   "1-FsZ32Un9uiNK7d65tlEFEaX4uqKmKhe",
   "10q1B_MVUqQUq_v9Y_sjqqvpE7soeOeIN",
-  "10sp_bCfKAOXl2ovGImhJmoWwMZMNmHsj",
   "11KV0YqRQMipinxsSXpD-8xcOLza4Vlgu",
   "11QElEK-A4Ho4fL81Y01aI6V6GH9wXNT2",
   "12GXn4WFLhG4KgegowiXMWfsPag1VorcP",
@@ -114,7 +113,6 @@ const MoreIdLists = [
   "1aFCOARi-PkaVtozsEcGDnXSZKADZ2Qr6",
   "1b59F58x3wezhl1rQMJJl87B2wjbe4gJd",
   "1cLAMDwVZhrpDuPIhyphfvFRdPI_NI7tz",
-  "1e1E7FSumoCLIp--puuf0603ox2CsjIBT",
   "1ePQhOyRlnohR_RMuPIy_qb88mpFyYvkA",
   "1frygz5ry_neRYqOzilTWsRaWWG_ofIiJ",
   "1gaenlb8J_5jSv6ps_zgqC2FvaQJBwOh3",
@@ -129,7 +127,6 @@ const MoreIdLists = [
   "1vTofYHR6hEuR0mrLUYIIK3ymlWi2AIGg",
   "1xD6lvmaMWaIUWnv6Qetc5Ln9uukEB_Q8",
   "1xS0eIpS5SLD6Z1xQ3Pp69PCoQcub-ani",
-  "1ya2pXIin05CRtMTrDOmfyJ3bw3bzOlOR",
   "1yqeBcY1C_SROY77EgioRZ6TwsJXODKnc",
 ];
 
