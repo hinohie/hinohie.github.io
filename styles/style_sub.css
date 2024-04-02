@@ -16,7 +16,7 @@
 		height: 100%;
 		margin: auto;
 		flex-direction: column;
-		justify-content: flex-end;
+		justify-content: unsafe end;
 		align-items: center;
 		gap: 15px;
 	}
