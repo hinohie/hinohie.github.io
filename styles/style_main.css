@@ -1,19 +1,19 @@
 .noto-serif kr-regular {
-  font-family: "Noto Serif KR", serif;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Noto Serif KR", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .italianno-regular {
-  font-family: "Italianno", cursive;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Italianno", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .ingrid-darling-regular {
-  font-family: "Ingrid Darling", cursive;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Ingrid Darling", cursive;
+	font-weight: 400;
+	font-style: normal;
 }
 
 .header-date {
@@ -57,53 +57,53 @@
 /* Global item constraints */
 
 .page {
-  width: 100%;
+	width: 100%;
 	height: 100%;
-	min-height: 300px;
+	min-height: 500px;
 	background: #FBFBFB;
 	overflow: hidden;
-  max-width: 1024px;
-  margin: auto;
+	max-width: 1024px;
+	margin: auto;
 
-  h1 {
-  	position: relative;
-  	text-align: center;
-  	color: black;
-  	font-size: 20px;
-  	font-family: Noto Serif KR;
-  	font-weight: 400;
-  	line-height: 30px;
-  	word-wrap: break-word;
-  	margin: 1em 0 1em 0;
-  }
+	h1 {
+		position: relative;
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 30px;
+		word-wrap: break-word;
+		margin: 1em 0 1em 0;
+	}
 }
 
 .content-page {
 	width: 100%;
 	height: 100%;
-	min-height: 300px;
+	min-height: 500px;
 	background: #FBFBFB;
 	overflow: hidden;
-  max-width: 1024px;
-  margin: auto;
+	max-width: 1024px;
+	margin: auto;
 
-  align-items: center;
-  display: flex;
+	align-items: center;
+	display: flex;
 	justify-content: center;
-  flex-direction: column;
+	flex-direction: column;
 
 
-  h1 {
-  	position: relative;
-  	text-align: center;
-  	color: black;
-  	font-size: 20px;
-  	font-family: Noto Serif KR;
-  	font-weight: 400;
-  	line-height: 30px;
-  	word-wrap: break-word;
-  	margin: 1em 0 1em 0;
-  }
+	h1 {
+		position: relative;
+		text-align: center;
+		color: black;
+		font-size: 20px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 30px;
+		word-wrap: break-word;
+		margin: 1em 0 1em 0;
+	}
 }
 
 .content-page > p {
@@ -121,14 +121,15 @@
 	width: 80%;
 	min-height: 450px;
 	margin: auto;
+	padding: 15px;
 	position: relative;
 	background: white;
 	border-radius: 17px;
 
-  align-items: center;
-  display: flex;
+	align-items: center;
+	display: flex;
 	justify-content: center;
-  flex-direction: column;
+	flex-direction: column;
 }
 
 .icon-button {
@@ -154,11 +155,11 @@
 }
 
 .icon-button:hover .icon-image{
-  opacity: 0.5;
+	opacity: 0.5;
 }
 
 small {
-  font-size: 12px;
+	font-size: 12px;
 	font-family: Noto Serif KR;
 	font-weight: 400;
 	word-wrap: break-word;
@@ -174,16 +175,17 @@ span {
 
 .content-page > .howToCome{
 	p {
-    span {
-      line-height: 1.5em;
-    }
+		span {
+			line-height: 1.5em;
+		}
 		align-self: stretch;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: flex-start;
 		display: flex;
-    margin: 0.75em 0 0.75em 0;
+		margin: 0.75em 1em 0.75em 1em;
 	}
+	width:100%;
 	padding-left: 10px;
 	padding-right: 10px;
 	position: relative;
@@ -205,143 +207,143 @@ span {
 }
 
 .calendar {
-  .Grid {
-    align-self: stretch;
-    flex: 1 1 0;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-  }
-  .Line {
-    align-self: stretch;
-    justify-content: space-between;
-    align-items: center;
-    display: inline-flex;
-  }
-  width: 80%;
-  height: 250px;
-  display: inline-flex;
+	.Grid {
+		align-self: stretch;
+		flex: 1 1 0;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		display: flex;
+	}
+	.Line {
+		align-self: stretch;
+		justify-content: space-between;
+		align-items: center;
+		display: inline-flex;
+	}
+	width: 80%;
+	height: 250px;
+	display: inline-flex;
 }
 
 .WeekDay {
-  .Text {
-    text-align: center;
-    color: #0F0F3F;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  .HighlightNumber {
-    position: relative;
-    background: #0F0F3F;
-    border-radius: 50%;
-    text-align: center;
-    white-space: nowrap;
-    padding: 0.5vh 1vh;
+	.Text {
+		text-align: center;
+		color: #0F0F3F;
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+	}
+	.HighlightNumber {
+		position: relative;
+		background: #0F0F3F;
+		border-radius: 50%;
+		text-align: center;
+		white-space: nowrap;
+		padding: 0.5vh 1vh;
 
-    color: white;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  .HiddenNumber {
-    text-align: center;
-    color: rgba(96.90, 96.90, 96.90, 0.25);
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  .RedNumber {
-    text-align: center;
-    color: #AB5959;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
-  .Number {
-    text-align: center;
-    color: #616161;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
+		color: white;
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+	}
+	.HiddenNumber {
+		text-align: center;
+		color: rgba(96.90, 96.90, 96.90, 0.25);
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+	}
+	.RedNumber {
+		text-align: center;
+		color: #AB5959;
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+	}
+	.Number {
+		text-align: center;
+		color: #616161;
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+	}
 
-  width: 10%;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+	width: 10%;
+	border-radius: 4px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
 }
 
 .Account {
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-  display: inline-flex;
-  gap: 10px;
-  margin: 15px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+	display: inline-flex;
+	gap: 10px;
+	width:100%;
 }
 .Account > .Line {
-  min-width: 120px;
-  flex-direction: row;
-  justify-content: flex-end;
-  display: inline-flex;
-  gap: 20px;
+	min-width: 120px;
+	flex-direction: row;
+	justify-content: flex-end;
+	display: inline-flex;
+	gap: 20px;
 
-  .Text {
-    white-space: nowrap;
-    text-align: center;
-    color: black;
-    font-size: 15px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    line-height: 30px;
-    word-wrap: break-word;
-  }
+	.Text {
+		white-space: nowrap;
+		text-align: center;
+		color: black;
+		font-size: 15px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 30px;
+		word-wrap: break-word;
+	}
 }
 
 button.Button {
-  .Text {
-    color: #0F0F02;
-    font-size: 13px;
-    font-family: Noto Serif KR;
-    font-weight: 400;
-    line-height: 26px;
+	.Text {
+		color: #0F0F02;
+		font-size: 13px;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 26px;
 
-    white-space: nowrap;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  width: fit-content;
-  position: relative;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		white-space: nowrap;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	width: fit-content;
+	position: relative;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-  background: #ECEEF2;
-  border-radius: 17px;
-  border-width: 0px;
-  overflow: hidden;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  display: flex;
+	background: #ECEEF2;
+	border-radius: 17px;
+	border-width: 0px;
+	overflow: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	display: flex;
 }
 .Button:hover {
-  background: #A1A1A1;
+	background: #A1A1A1;
 
-  .Text {
-    color: #FDFDFD;
-  }
+	.Text {
+		color: #FDFDFD;
+	}
 }
 .Button:active {
-  background: #101D41;
-  .Text {
-    color: #FCFCFC;
-  }
+	background: #101D41;
+	.Text {
+		color: #FCFCFC;
+	}
 }
