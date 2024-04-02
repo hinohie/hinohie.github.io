@@ -288,6 +288,7 @@ span {
 	gap: 10px;
 	margin: 15px;
 	width:100%;
+  max-width: 340px;
 }
 .Account > .Line {
 	min-width: 120px;
@@ -306,6 +307,14 @@ span {
 		line-height: 30px;
 		word-wrap: break-word;
 	}
+}
+
+.Account > .ButtonWrapper {
+	flex-direction: row;
+	justify-content: flex-start;
+	display: inline-flex;
+  flex-wrap: wrap;
+	gap: 10px;
 }
 
 button.Button {
@@ -327,7 +336,7 @@ button.Button {
 	background: #ECEEF2;
 	border-radius: 17px;
 	border-width: 0px;
-	overflow: auto;
+	overflow: visible;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
