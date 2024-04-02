@@ -52,7 +52,8 @@ function generateAccountInfoBoard() {
         <div class="Line">' +
           `<div class="Text">${name1[i]}</div>` +
           `<div class="Text">${name2[i]}</div></div>` +
-          `<button class="Button" onclick="popupAccount('계좌번호', '${name2[i]}', '${bank[i]}', '${account[i]}')" style="margin-left: 20px">` +
+          `<div></div>` +
+          `<button class="Button" onclick="popupAccount('계좌번호', '${name2[i]}', '${bank[i]}', '${account[i]}')">` +
           '  <div class="Text">계좌</div>\
           </button>' +
           `<button class="Button" onclick="window.open('${kakao[i]}');">` +
