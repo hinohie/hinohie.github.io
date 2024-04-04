@@ -5,7 +5,7 @@ function GalleryMoreClicked()
 }
 
 function ModalOpen(image){
-    modal.style.display = "block";
+    modal.style.display = "flex";
 
     var modalImg = document.getElementById("modalImage");
     var inputSrc = image.src;

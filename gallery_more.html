@@ -11,9 +11,6 @@
 </head>
 <body>
     <div>
-        <h1>More images! (Swipe left to right / top to bottom)</h1>
-    </div>
-    <div>
         <div class="MoreImages"></div>
     </div>
 
@@ -22,25 +19,17 @@
     <!-- The Modal -->
     <!-- Code base : https://www.w3schools.com/howto/howto_css_modal_images.asp -->
     <div id="myModal" class="modal">
-        <span class="closeModal">&times;</span>
         <img class="modal-content" id="modalImage"/>
     </div>
 
     <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        var modalImage = document.getElementById("modalImage");
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-        // Get the <span> element that closes the modal
-        var closeButton = document.getElementsByClassName("closeModal")[0];
-
-        // When the user clicks image, or close button, close the modal
-        modalImage.onclick = function () {
-          modal.style.display = "none";
-        }
-        closeButton.onclick = function () {
-          modal.style.display = "none";
-        }
-      </script>
+      // When the user clicks modal, close the modal
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
 </body>
 </html>
