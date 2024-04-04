@@ -1,4 +1,4 @@
-function popupClose()
+function accountPopupClose()
 {
   const $target = document.getElementById("account-popup");
   $target.style.display = "none";
@@ -28,7 +28,7 @@ function popupAccount(title, name, bank, accountInfo) {
     `<button class="Left"onclick="copyClipboad('${title}', '${accountInfo}')">` +
     '  <div class="Text" style="color: white">복사</div>\
     </button>' +
-    `<button class="Right" onclick="popupClose()">` +
+    `<button class="Right" onclick="accountPopupClose()">` +
     '  <div class="Text" style="color: black">닫기</div>\
     </button>\
   </div>\

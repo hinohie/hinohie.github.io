@@ -12,7 +12,5 @@ function ModalOpen(image){
 
     var outputSrc = inputSrc.replace("sz=w300&", "sz=w700&");
 
-    console.log("Modal load image!" + outputSrc);
-
     modalImg.src = outputSrc;
 }
