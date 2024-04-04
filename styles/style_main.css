@@ -64,18 +64,18 @@
 	overflow: hidden;
 	max-width: 1024px;
 	margin: auto;
+}
 
-	h1 {
-		position: relative;
-		text-align: center;
-		color: black;
-		font-size: 1.25rem;
-		font-family: Noto Serif KR;
-		font-weight: 400;
-		line-height: 1.55rlh;
-		word-wrap: break-word;
-		margin: 1em 0 1em 0;
-	}
+.page >	h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-size: 1.25rem;
+	font-family: Noto Serif KR;
+	font-weight: 400;
+	line-height: 1.55rlh;
+	word-wrap: break-word;
+	margin: 1em 0 1em 0;
 }
 
 .content-page {
@@ -91,19 +91,18 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
 
-
-	h1 {
-		position: relative;
-		text-align: center;
-		color: black;
-		font-size: 1.25rem;
-		font-family: Noto Serif KR;
-		font-weight: 400;
-		line-height: 1.55rlh;
-		word-wrap: break-word;
-		margin: 1em 0 1em 0;
-	}
+.content-page >	h1 {
+	position: relative;
+	text-align: center;
+	color: black;
+	font-size: 1.25rem;
+	font-family: Noto Serif KR;
+	font-weight: 400;
+	line-height: 1.55rlh;
+	word-wrap: break-word;
+	margin: 1em 0 1em 0;
 }
 
 .content-page > p {
