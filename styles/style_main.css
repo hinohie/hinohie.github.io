@@ -355,6 +355,13 @@ button.Button {
 		color: #FCFCFC;
 	}
 }
+.Button:disabled {
+	background: #E1E1E1;
+
+	.Text {
+		color: #FDFDFD;
+	}
+}
 
 /* Account button layout change */
 @media only screen and (max-width: 400px){

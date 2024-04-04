@@ -47,26 +47,37 @@ function generateAccountInfoBoard() {
   let text = "";
   for(var i = 0; i < name1.length; i++)
   {
-      text += '\
-      <div class="Account">\
-        <div class="Line">' +
-          `<div class="Text">${name1[i]}</div>` +
-          `<div class="Text">${name2[i]}</div>` +
-        `</div>` +
-        `<div></div>` +
-        `<div class="ButtonWrapper">` +
-          `<button class="Button" onclick="popupAccount('계좌번호', '${name2[i]}', '${bank[i]}', '${account[i]}')">` +
-          '  <div class="Text">계좌</div>\
-          </button>' +
-          `<button class="Button" onclick="window.open('${kakao[i]}');">` +
-          '  <div class="Text">카카오페이</div>\
-          </button>\
-        </div>\
-      </div>';
+    let accountDisabled = "";
+    let kakaoDisabled = "";
+    // Disable button if some informations are not ready.
+    if(account[i] == "")
+    {
+      accountDisabled = `disabled="disabled"`;
+    }
+    if(kakao[i] == "")
+    {
+      kakaoDisabled = `disabled="disabled"`;
+    }
+    text += '\
+    <div class="Account">\
+      <div class="Line">' +
+        `<div class="Text">${name1[i]}</div>` +
+        `<div class="Text">${name2[i]}</div>` +
+      `</div>` +
+      `<div></div>` +
+      `<div class="ButtonWrapper">` +
+        `<button class="Button" onclick="popupAccount('계좌번호', '${name2[i]}', '${bank[i]}', '${account[i]}')" ${accountDisabled}>` +
+        '  <div class="Text">계좌</div>\
+        </button>' +
+        `<button class="Button" onclick="window.open('${kakao[i]}');" ${kakaoDisabled}>` +
+        '  <div class="Text">카카오페이</div>\
+        </button>\
+      </div>\
+    </div>';
 
-      if(i == 1) {
-        text += '<div style="width: 80%; margin: 20px; height: 0px; border: 1px #0F0F2F solid"></div>';
-      }
+    if(i == 1) {
+      text += '<div style="width: 80%; margin: 20px; height: 0px; border: 1px #0F0F2F solid"></div>';
+    }
   }
 
   $target.innerHTML = text;
