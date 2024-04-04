@@ -1,14 +1,14 @@
 const IdLists = [
-    "13G4l_TenpJI6OLcJjtkzx-dsabcALQFh",
-    "14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU",
-    "1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4",
-    "1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz",
-    "1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U",
-    "1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL",
-    "1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO",
-    "1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0",
-    "1o6zeI2eJeMynys9DD-d25zr6llKcSDI7",
-    "1rNJ3UfogZibj96Xqco3ocTsMkCHf3GOC",
+  "1o6zeI2eJeMynys9DD-d25zr6llKcSDI7",
+  "13G4l_TenpJI6OLcJjtkzx-dsabcALQFh",
+  "14ZmbfFtqJPty8cwDoIBRxmT8tC0aVtXU",
+  "1zq60kg0UhTXuYpytULj0AmhCIFVVoXP4",
+  "1ChU8iPaH6yVbTrSAEIHBoh1mhv4l0BEz",
+  "1VTRhqp7B6oOSMcx56sdjUGRBqi9RUJ4U",
+  "1ZzT2aCbhOlbxFQZnJYOVq3odn22d9JUL",
+  "1d2Mku8yDsUr0z12NyX_lXZj2Y8PW2ypO",
+  "1yYYCYADQGp8OYAt0xEElNaty0GQMWUZ0",
+  "1rNJ3UfogZibj96Xqco3ocTsMkCHf3GOC",
 ];
 
 const MoreIdLists = [
@@ -200,18 +200,16 @@ function generateGallerySwiperImages() {
   const $target = $targets[0];
 
   let text = "";
-  text += `<div class="swiper-wrapper">`;
+  text += `<div class="swiper-wrapper" style="padding-bottom: 4vh;">`;
   for(let i = 0; i < IdLists.length; ++i)
   {
     text += `<div class="swiper-slide"><img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-${i+1}" loading="lazy" width="300" style="min-height:100px;" onerror="this.src='./resources/image/favicon.ico';" onclick="ModalOpen(this);"/></div>`;
   }
   text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : TODO)</button></div></div>`;
   text += "</div>";
-  
-  text += `<div class="swiper-button-next"></div>`;
-  text += `<div class="swiper-button-prev"></div>`;
+
   text += `<div class="swiper-pagination"></div>`;
-  
+
   // console.log(text);
   $target.innerHTML = text;
 }
