@@ -21,6 +21,7 @@ Web 개발 기술 참고 페이지
 
 # 로컬 실행방법 (for developer)
  * jekyll 을 설치합니다.
- * jekyll serve
+ * `bundle exec jekyll serve`
  * 이제 127.0.0.1:4000 에서 intex.html 이 반영되어있다.
- * 127.0.0.1:4000/public/index.html 에서는, 자체 테스트중인 샘플페이지가 열린다.
+ * 127.0.0.1:4000/index.html 에서는, 자체 테스트중인 샘플페이지가 열린다.
+ * (추가) 2024-04-05 기준 git-pages 에서 지원하는 jekyll 버전은 3.9.5 이다. `bundle exec jekyll -v` 결과로 `jekyll 3.9.5` 이 나오는지 확인하자.
