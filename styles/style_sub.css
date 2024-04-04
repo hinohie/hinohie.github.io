@@ -1,3 +1,10 @@
+html, body{
+	-webkit-text-size-adjust : auto;  /* 크롬, 사파리, 오페라 신버전 */
+	-ms-text-size-adjust : auto;  /* IE */
+	-moz-text-size-adjust : auto;  /* 파이어폭스 */
+	-o-text-size-adjust : auto;  /* 오페라 구버전 */
+}
+
 /* Page 1 */
 .Coverimage {
 	.Frame9 {
