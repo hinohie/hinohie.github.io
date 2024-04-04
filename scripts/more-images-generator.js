@@ -203,9 +203,11 @@ function generateGallerySwiperImages() {
   {
     text += `<div class="swiper-slide"><img src="https://drive.google.com/thumbnail?sz=w300&id=${IdLists[i]}" alt="gallery-image-${i+1}" loading="lazy" width="300" style="min-height:100px;" onerror="this.src='./resources/image/favicon.ico';" onclick="ModalOpen(this);"/></div>`;
   }
-  text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : TODO)</button></div></div>`;
+  text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : ~10MB)</button></div></div>`;
   text += "</div>";
 
+  text += `<div class="swiper-button-next"></div>`;
+  text += `<div class="swiper-button-prev"></div>`;
   text += `<div class="swiper-pagination"></div>`;
 
   // console.log(text);

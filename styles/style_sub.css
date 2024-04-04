@@ -84,36 +84,49 @@
 }
 
 .swiper {
-		width: 100%;
-		padding-top: 50px;
-		padding-bottom: 50px;
-		overflow: visible !important;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	overflow: visible !important;
 }
 
 .swiper-slide {
-		background-position: center;
-		background-size: cover;
-		max-width: 70%;
-		margin: auto;
-		max-width: 300px;
+	background-position: center;
+	background-size: cover;
+	max-width: 70%;
+	margin: auto;
+	max-width: 300px;
 }
 
 .swiper-slide img {
-		position: center;
-		display: inline-block;
-		width: 100%;
-		height: 100%;
-		border-radius: 30px;
-		box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
-		transition: 0.3s;
+	position: center;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+	box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.25);
+	transition: 0.3s;
 }
 
 .swiper-slide img:hover {
-		transform:scale(1.05);
+	transform:scale(1.05);
 }
 
 .swiper-pagination-bullet-active {
   background-color: #0F0F3F !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #0F0F3F !important;
+}
+
+/* Hide swiper button if screen width is too small, so button hide images */
+@media  only screen and (max-width: 600px) {
+	.swiper-button-prev,
+	.swiper-button-next{
+		display: none !important;
+	}
 }
 
 /* Modal */
@@ -161,22 +174,4 @@
 @keyframes zoom {
 	from {transform:scale(0)}
 	to {transform:scale(1)}
-}
-
-/* The Close Button */
-.closeModal {
-	position: absolute;
-	top: 15px;
-	right: 35px;
-	color: #f1f1f1;
-	font-size: 2.5rem;
-	font-weight: bold;
-	transition: 0.3s;
-}
-
-.closeModal:hover,
-.closeModal:focus {
-	color: #bbb;
-	text-decoration: none;
-	cursor: pointer;
 }
