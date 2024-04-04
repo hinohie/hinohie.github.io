@@ -206,8 +206,8 @@ function generateGallerySwiperImages() {
   text += `<div class="swiper-slide"><div style="display:grid;vertical-align:middle;background-color:#FBFBFB;aspect-ratio:1/1;align-items:center;margin:auto;max-width:50%;"><button id="galleryMoreButton" onclick="GalleryMoreClicked()" style="aspect-ratio:1/1;">더 보기<br/>(예상 데이터 사용량 : ~10MB)</button></div></div>`;
   text += "</div>";
 
-  text += `<div class="swiper-button-next"></div>`;
   text += `<div class="swiper-button-prev"></div>`;
+  text += `<div class="swiper-button-next"></div>`;
   text += `<div class="swiper-pagination"></div>`;
 
   // console.log(text);
