@@ -17,6 +17,7 @@ Web 개발 기술 참고 페이지
  * https://dev.gmarket.com/95
  * https://helloinyong.tistory.com/297
  * https://velog.io/@byeol4001/Meta-Tag-OG%EC%98%A4%ED%94%88%EA%B7%B8%EB%9E%98%ED%94%84-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0
+ * https://www.aleksandrhovhannisyan.com/blog/jekyll-comment-system-github-issues/
 
 
 # 로컬 실행방법 (for developer)

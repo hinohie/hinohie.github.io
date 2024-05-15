@@ -38,6 +38,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&family=Italianno&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+
+    <!-- Scripts for comment system -->
+    <script src="https://unpkg.com/marked@0.3.6/marked.min.js"></script>
+    <script src="https://unpkg.com/dompurify@1.0.8/dist/purify.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.7.8/plugin/relativeTime.js"></script>
+
   </head>
   <body>
     <div class="full-page">
@@ -195,6 +202,27 @@
         <div class="footer"></div>
       </div>
 
+      <!-- Page 7 : Comments -->
+      <div class="content-page">
+        <div class="header-date">7 / 13</div>
+        <div class="header-line"></div>
+        <div class="header"></div>
+        <section id="comments">
+          <div class="comment-actions">
+            <h1 class="titleText">Comments <span id="comments-count"></span></h1>
+            <a
+              class="button"
+              href="https://github.com/hinohie/hinohie.github.io/issues/21"
+              >Post comment</a
+            >
+          </div>
+          <div id="comments-wrapper">
+            Loading...
+          </div>
+        </section>
+        <div class="footer"></div>
+      </div>
+
       <div id="account-popup" class="Pop-up-wrapper"></div>
 
       <script src="./scripts/calendar-script.js" defer></script>
@@ -244,6 +272,124 @@
           modal.style.display = "none";
         }
       </script>
+
+      <!-- Comments script -->
+      <script>
+        const commentsSection = document.getElementById('comments');
+        const commentsWrapper = commentsSection.querySelector('#comments-wrapper');
+        const commentsCount = commentsSection.querySelector('#comments-count');
+
+        const commentsObserver = new IntersectionObserver((entries, self) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            fetchComments(); // this is the important part
+            self.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '200px 0px 0px 0px' });
+
+      commentsObserver.observe(commentsSection);
+
+      const fetchComments = async () => {
+        try {
+          const comments = await (await fetch(
+            'https://api.github.com/repos/hinohie/hinohie.github.io/issues/21/comments'
+          )).json();
+          initRenderComments(comments);
+        } catch (e) {
+          commentsWrapper.innerHTML = `<p>Unable to retrieve the comments for this post.</p>`;
+        }
+      }
+      const loadScript = (src) => {
+        const scriptElement = document.createElement('script');
+        document.body.appendChild(scriptElement);
+
+        return new Promise((resolve) => {
+          scriptElement.onload = resolve;
+
+          // Important to register onload before setting src
+          scriptElement.src = src;
+        });
+      }
+
+      const commentScripts = [
+        'https://unpkg.com/marked@0.3.6/marked.min.js',
+        'https://unpkg.com/dompurify@1.0.8/dist/purify.min.js',
+        'https://unpkg.com/dayjs@1.8.21/dayjs.min.js',
+        'https://unpkg.com/dayjs@1.7.8/plugin/relativeTime.js',
+      ];
+
+      // Reminder: this gets called when the viewport intersects with the comments section
+      const initRenderComments = async (comments) => {
+        if (!comments.length) {
+          commentsWrapper.innerHTML = `<p>No comments yet 👀 Be the first to post!</p>`;
+          return;
+        }
+
+        // Load all comment script dependencies async
+        await Promise.all(commentScripts.map((script) => loadScript(script)));
+        renderComments(comments);
+      }
+
+      const renderComments = (comments) => {
+        // load the relativeTime plugin for dayjs so we can express dates relative to now
+        dayjs.extend(dayjs_plugin_relativeTime);
+
+        commentsCount.innerText = `(${comments.length})`;
+
+        const commentsList = document.createElement('ol');
+        commentsList.className = 'comments-list';
+        commentsList.setAttribute('aria-label', 'Comments on this blog post');
+
+        commentsList.innerHTML = comments
+        .sort((comment1, comment2) => {
+          return comment1.created_at < comment2.created_at ? 1 : -1;
+        })
+        .map(comment => {
+          const datePosted = dayjs(comment.created_at).fromNow();
+          const user = comment.user;
+          const body = DOMPurify.sanitize(marked(comment.body));
+          const postedByAuthor = comment.author_association === 'OWNER';
+          const edited = comment.created_at !== comment.updated_at;
+
+          return `<li class="comment">
+                      <div class="commenter">
+                          <img src="${user.avatar_url}" alt="" aria-hidden="true" class="meta avatar" />
+                          <a
+                              href="https://github.com/${user.login}"
+                              class="meta username"
+                              >${user.login}</a
+                          >
+                          <div class="meta date-posted">commented <time datetime="${comment.created_at}">${datePosted}</time></div>
+                          ${postedByAuthor ? '<span class="meta tag author-badge">Author</span>' : ''}
+                          ${edited ? `<span class="meta comment-edited">Edited</span>` : ''}
+                      </div>
+                      <div class="comment-body">${body}</div>
+                  </li>`;
+        })
+        .join('');
+
+        commentsWrapper.innerHTML = '';
+        commentsWrapper.appendChild(commentsList);
+      }
+
+      const commentsList = document.createElement("ol");
+      commentsList.className = 'comments-list';
+      commentsList.setAttribute("aria-label", "Comments on this blog post");
+
+      commentsList.innerHTML = comments
+        .sort((comment1, comment2) => {
+          return comment1.created_at < comment2.created_at ? 1 : -1;
+        })
+        .map(comment => { /* rendering here */ })
+        .join('');
+
+      const body = DOMPurify.sanitize(marked(comment.body));
+      const postedByAuthor = comment.author_association === 'OWNER';
+      const edited = comment.created_at !== comment.updated_at;
+
+      </script>
+
     </div>
   </body>
 </html>
