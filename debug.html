@@ -8,7 +8,7 @@
     <title>디버그 페이지</title>
     <link href="./styles/style_main.css" rel="stylesheet"/>
     <link href="./styles/style_sub.css" rel="stylesheet"/>
-    <link href="./styles/style_popup.css" rel="stylesheet"/>
+    <link href="./styles/style_comment.css" rel="stylesheet"/>
     <link rel="icon" href="./resources/image/favicon.ico">
     <script src="./scripts/click-script.js"></script>
 
@@ -126,15 +126,15 @@
 
           return `<li class="comment">
                       <div class="commenter">
-                          <img src="${user.avatar_url}" alt="" aria-hidden="true" class="meta avatar" />
+                          <img src="${user.avatar_url}" alt="" aria-hidden="true" class="meta_avatar" />
                           <a
                               href="https://github.com/${user.login}"
-                              class="meta username"
+                              class="meta_username"
                               >${user.login}</a
                           >
-                          <div class="meta date-posted">commented <time datetime="${comment.created_at}">${datePosted}</time></div>
-                          ${postedByAuthor ? '<span class="meta tag author-badge">Author</span>' : ''}
-                          ${edited ? `<span class="meta comment-edited">Edited</span>` : ''}
+                          <div class="meta_date-posted">commented <time datetime="${comment.created_at}">${datePosted}</time></div>
+                          ${postedByAuthor ? '<span class="meta_tag_author-badge">Author</span>' : ''}
+                          ${edited ? `<span class="meta_comment-edited">Edited</span>` : ''}
                       </div>
                       <div class="comment-body">${body}</div>
                   </li>`;
@@ -144,10 +144,6 @@
         commentsWrapper.innerHTML = '';
         commentsWrapper.appendChild(commentsList);
       }
-
-      const body = DOMPurify.sanitize(marked(comment.body));
-      const postedByAuthor = comment.author_association === 'OWNER';
-      const edited = comment.created_at !== comment.updated_at;
 
       </script>
 
