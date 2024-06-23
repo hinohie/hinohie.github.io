@@ -145,10 +145,6 @@
         commentsWrapper.appendChild(commentsList);
       }
 
-      const body = DOMPurify.sanitize(marked(comment.body));
-      const postedByAuthor = comment.author_association === 'OWNER';
-      const edited = comment.created_at !== comment.updated_at;
-
       </script>
 
     </div>
