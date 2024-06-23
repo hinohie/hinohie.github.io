@@ -1,0 +1,72 @@
+.comment-actions {
+	.titleText {
+		text-align: center;
+		color: black;
+		font-size: 2.0rem;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		word-wrap: break-word;
+		line-height: 1.55rlh;
+	};
+	.button {
+		color: black;
+		font-size: 1.25rem;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 1.55rlh;
+		flex-direction: column;
+		justify-content: center;
+		word-wrap: break-word;
+		align-items: flex-start;
+	};
+	padding: 0.5vw;;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: aqua;
+}
+
+.comment {
+	.commenter {
+		.meta_avatar {
+			width: 40px;
+			height: 40px;
+			box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+			border-radius: 17px;
+	
+			justify-content: center;
+			align-items: center;
+	
+			overflow: hidden;
+		};
+		.meta_username {
+			background-color: aqua;
+
+		};
+		.meta_date-posted{
+			background-color: aqua;
+
+		};
+		.meta_tag_author-badge{
+			background-color: aqua;
+
+		};
+		.meta_comment-edited{
+			background-color: aqua;
+
+		};
+	};
+	.comment-body {
+		color: black;
+		font-size: 1.25rem;
+		font-family: Noto Serif KR;
+		font-weight: 400;
+		line-height: 1.55rlh;
+	};
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	display: inline-flex;
+}
